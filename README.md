@@ -1,130 +1,322 @@
-# CodeMind-AI
+# CodeMind AI
 
-CodeMind-AI is an AI developer workspace for code review, error solving, refactoring, complexity analysis, saved reports, Monaco editing, authentication, and AI chat.
+CodeMind AI is a full-stack AI-powered developer workspace built with React, Node.js, Express, MongoDB, Groq AI, Monaco Editor, and Tailwind CSS.
 
-## Features
+It helps developers review code, solve errors, refactor applications, analyze complexity, chat with AI, and manage reports inside a modern SaaS-style interface.
 
-- AI Code Review with quality score, suggestions, optimizations, fixes, best practices, security risks, and complexity analysis.
-- AI Error Solver for error messages, stack traces, source code, corrected code, and prevention tips.
-- AI Refactoring Engine for naming, modularization, redundancy reduction, and readability.
-- Multi-language support: JavaScript, TypeScript, Python, Java, C++, C, Go, Rust, PHP.
-- JWT authentication with register/login, profile management, and password reset token flow.
-- Saved Reports Dashboard with search, download, compare, and delete actions.
-- AI Chat Assistant for debugging, DSA, optimization, architecture, and interview preparation.
-- Monaco Code Editor with syntax highlighting, formatting, language switching, save, and dark/light themes.
-- AI Complexity Analyzer for time complexity, space complexity, inefficient loops, and recursion tips.
+---
 
-## Project Structure
+# Live Deployment
+
+## Frontend
+
+:contentReference[oaicite:0]{index=0}
+
+## Backend API
+
+:contentReference[oaicite:1]{index=1}
+
+## GitHub Repository
+
+:contentReference[oaicite:2]{index=2}
+
+---
+
+# Features
+
+- AI Code Review
+- AI Error Solver
+- AI Refactoring Engine
+- AI Complexity Analyzer
+- Monaco Code Editor
+- AI Chat Assistant
+- JWT Authentication
+- Password Reset Flow
+- Saved Reports Dashboard
+- Multi-language Support
+- Professional SaaS UI
+- PDF Export Support
+- Dark Modern Interface
+- Responsive Design
+
+---
+
+# Supported Languages
+
+- JavaScript
+- TypeScript
+- Python
+- Java
+- C++
+- C
+- Go
+- Rust
+- PHP
+
+---
+
+# Tech Stack
+
+## Frontend
+
+- React.js
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Monaco Editor
+- React Markdown
+- Axios
+- React Router DOM
+- Lucide React
+
+---
+
+## Backend
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- Groq AI SDK
+- Multer
+- bcrypt.js
+
+---
+
+# Project Structure
 
 ```txt
 CodeMind-AI/
-  client/   React + Vite + Tailwind frontend
-  server/   Express + MongoDB + Groq AI backend
+│
+├── client/     React + Vite Frontend
+│
+└── server/     Express + MongoDB Backend
 ```
 
-## Requirements
+---
 
-- Node.js 18+
-- MongoDB connection string
-- Groq API key
+# Installation
 
-Dependency inventory is listed in `requirements.txt`. Install packages with npm:
+## Clone Repository
+
+```bash
+git clone https://github.com/riddhi191203/CodeMind-AI.git
+
+cd CodeMind-AI
+```
+
+---
+
+# Backend Setup
+
+## Install Dependencies
 
 ```bash
 cd server
-npm install
 
-cd ../client
 npm install
 ```
 
-## Environment
+---
 
-Create `server/.env`:
+## Create `.env`
 
 ```env
 PORT=5000
+
 MONGO_URI=your_mongodb_connection_string
+
 JWT_SECRET=your_jwt_secret
+
 GROQ_API_KEY=your_groq_api_key
+
 GROQ_MODEL=llama-3.3-70b-versatile
-CLIENT_URL=http://localhost:5173
-NODE_ENV=development
+
+CLIENT_URL=https://code-mind-ai-rho.vercel.app
 ```
 
-Create `client/.env`:
+---
 
-```env
-VITE_API_URL=http://localhost:5000
-```
-
-## Run Locally
-
-Start backend:
+## Run Backend
 
 ```bash
-cd server
 npm run dev
 ```
 
-Start frontend:
+Backend runs on:
+
+```txt
+http://localhost:5000
+```
+
+---
+
+# Frontend Setup
+
+## Install Dependencies
 
 ```bash
 cd client
+
+npm install
+```
+
+---
+
+## Create `.env`
+
+```env
+VITE_API_URL=https://codemind-ai-3gd7.onrender.com
+```
+
+---
+
+## Run Frontend
+
+```bash
 npm run dev
 ```
 
-Open:
+Frontend runs on:
 
 ```txt
 http://localhost:5173
 ```
 
-## Main API Routes
+---
 
-Authentication:
+# Main API Routes
 
-- `POST /api/auth/register`
-- `POST /api/auth/login`
-- `GET /api/auth/profile`
-- `PUT /api/auth/profile`
-- `POST /api/auth/forgot-password`
-- `POST /api/auth/reset-password/:token`
-- `POST /api/auth/google`
+## Authentication Routes
 
-AI tools and reports:
+```txt
+POST   /api/auth/register
+POST   /api/auth/login
+GET    /api/auth/profile
+PUT    /api/auth/profile
+POST   /api/auth/forgot-password
+POST   /api/auth/reset-password/:token
+```
 
-- `GET /api/review/languages`
-- `POST /api/review/analyze`
-- `POST /api/review/error-solver`
-- `POST /api/review/refactor`
-- `POST /api/review/complexity`
-- `POST /api/review/format`
-- `GET /api/review/history`
-- `GET /api/review/:id`
-- `GET /api/review/:id/download`
-- `POST /api/review/compare`
-- `DELETE /api/review/:id`
+---
 
-Chat:
+## AI Review Routes
 
-- `POST /api/chat`
+```txt
+POST   /api/review/analyze
+POST   /api/review/error-solver
+POST   /api/review/refactor
+POST   /api/review/complexity
+POST   /api/review/format
+```
 
-## Verification
+---
 
-Frontend:
+## Reports Routes
+
+```txt
+GET      /api/review/history
+GET      /api/review/:id
+DELETE   /api/review/:id
+POST     /api/review/compare
+```
+
+---
+
+## Chat Route
+
+```txt
+POST   /api/chat
+```
+
+---
+
+# Deployment
+
+## Frontend Deployment
+
+- Vercel
+
+## Backend Deployment
+
+- Render
+
+## Database
+
+- MongoDB Atlas
+
+---
+
+# Build Commands
+
+## Frontend Build
 
 ```bash
-cd client
-npm run lint
 npm run build
 ```
 
-Backend syntax check:
+---
+
+## Backend Syntax Check
 
 ```bash
-cd server
 node --check server.js
 ```
 
+---
 
+# Environment Variables
+
+## Server
+
+```env
+PORT=
+MONGO_URI=
+JWT_SECRET=
+GROQ_API_KEY=
+GROQ_MODEL=
+CLIENT_URL=
+```
+
+---
+
+## Client
+
+```env
+VITE_API_URL=
+```
+
+---
+
+# Local Development
+
+## Start Backend
+
+```bash
+cd server
+npm run dev
+```
+
+---
+
+## Start Frontend
+
+```bash
+cd client
+npm run dev
+```
+
+---
+
+# Author
+
+## Riddhi Jain
+
+CodeMind AI — AI Engineering Workspace for intelligent code analysis, debugging, optimization, and developer productivity.
+
+---
+
+# License
+
+MIT License
