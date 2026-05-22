@@ -1,0 +1,57 @@
+# CodeMind-AI dependency inventory
+# This is a Node.js project, so install with npm in each app folder.
+
+# Frontend runtime dependencies
+client:@google/generative-ai@^0.24.1
+client:@monaco-editor/react@^4.7.0
+client:@tailwindcss/vite@^4.3.0
+client:axios@^1.16.1
+client:clsx@^2.1.1
+client:framer-motion@^12.39.0
+client:html2canvas@^1.4.1
+client:html2pdf.js@^0.14.0
+client:jspdf@^4.2.1
+client:lucide-react@^1.16.0
+client:react@^19.2.6
+client:react-dom@^19.2.6
+client:react-hot-toast@^2.6.0
+client:react-markdown@^10.1.0
+client:react-router-dom@^7.15.1
+client:react-syntax-highlighter@^16.1.1
+client:remark-gfm@^4.0.1
+client:tailwind-merge@^3.6.0
+client:zustand@^5.0.13
+
+# Frontend dev dependencies
+client-dev:@eslint/js@^10.0.1
+client-dev:@types/react@^19.2.14
+client-dev:@types/react-dom@^19.2.3
+client-dev:@vitejs/plugin-react@^6.0.1
+client-dev:autoprefixer@^10.5.0
+client-dev:eslint@^10.3.0
+client-dev:eslint-plugin-react-hooks@^7.1.1
+client-dev:eslint-plugin-react-refresh@^0.5.2
+client-dev:globals@^17.6.0
+client-dev:postcss@^8.5.15
+client-dev:tailwindcss@^4.3.0
+client-dev:vite@^8.0.12
+
+# Backend runtime dependencies
+server:@google/generative-ai@^0.24.1
+server:bcryptjs@^3.0.3
+server:cookie-parser@^1.4.7
+server:cors@^2.8.6
+server:dotenv@^17.4.2
+server:express@^5.2.1
+server:express-rate-limit@^8.5.2
+server:groq-sdk@^1.2.0
+server:helmet@^8.1.0
+server:jsonwebtoken@^9.0.3
+server:mongodb@^7.2.0
+server:mongoose@^9.6.2
+server:morgan@^1.10.1
+server:multer@^2.1.1
+server:winston@^3.19.0
+
+# Backend dev dependencies
+server-dev:nodemon@^3.1.14
