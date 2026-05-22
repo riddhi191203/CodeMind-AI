@@ -10,15 +10,15 @@ It helps developers review code, solve errors, refactor applications, analyze co
 
 ## Frontend
 
-:contentReference[oaicite:0]{index=0}
+https://code-mind-ai-rho.vercel.app
 
 ## Backend API
 
-:contentReference[oaicite:1]{index=1}
+https://codemind-ai-3gd7.onrender.com
 
 ## GitHub Repository
 
-:contentReference[oaicite:2]{index=2}
+https://github.com/riddhi191203/CodeMind-AI.gi
 
 ---
 
